@@ -1,0 +1,16 @@
+<div class="form-group container">
+    <label>Email</label>
+    <input type="text" class="form-control" placeholder="" [(ngModel)]="email">
+    <label>FullName</label>
+
+    <!-- local reference -->
+    <input #fullNameInput type="text" class="form-control" placeholder="">
+
+    <button (click)="showInputEmail()">Submit 1</button>
+
+    <!-- local reference -->
+    <button (click)="showInputFullName(fullNameInput.value)">Submit 2</button>
+
+    <p>Email: {{email}}</p>
+    <p>FullName: {{fullName}}</p>
+</div>

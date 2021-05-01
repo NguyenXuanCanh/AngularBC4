@@ -1,0 +1,21 @@
+<!-- One way Binding -->
+<!-- INTERPOLATION -->
+<h1>Name: {{fullName}}</h1>
+
+<!-- <label>Email: </label> -->
+<!-- <input type="text" value={{email}}> không được đâu sói ạ -->
+<!-- Property Binding -->
+<!-- <input type="text" [value]="email" > -->
+<!-- <br> -->
+<!-- <img src={{hinhAnh}} alt="" class="w-50"> -->
+<!-- <br> -->
+
+<!-- Event Binding -->
+<button class="btn btn-danger" (click)="showMsg()">Show Msg</button>
+<br>
+<button class="btn btn-success" (click)="increaseAge()">Increase Age</button>
+<h3>Age: {{age}}</h3>
+
+<!-- Two way binding -->
+<input type="text" [(ngModel)]="email">
+<h3>Email: {{email}}</h3>
